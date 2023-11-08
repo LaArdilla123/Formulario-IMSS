@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    <title>Formulario IMSS</title>
+</head>
+
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/IMSS_Logos%C3%ADmbolo.png" alt="">
+    </header>
+    <main>
+        <section class="formu">
+            <h1>Formulario del IMSS</h1>
+            <form action="#" id="formulario">
+                <ul>
+                    <li>
+                        <span class="required notificacion">*Por favor ingrese sus datos*</span>
+                    </li>
+                    <li>
+                        <Label for="NDH">Num. Derecho Habiente</Label>
+                        <input type="text" for="NDH" name="NDH" placeholder="11 caracteres: números o letras">
+                    </li>
+                    <li>
+                        <Label for="nombre">Nombre</Label>
+                        <input type="text" for="nombre" name="nombre" placeholder="Escrbir su nombre">
+                    </li>
+                    <li>
+                        <Label for="apell">Apellidos</Label>
+                        <input type="text" for="apell" name="apell" placeholder="Escrbir su apellido">
+                    </li>
+                    <li>
+                        <label for="sangre"> Tipo de Sangre </label>
+                        <select name="sangre" id="" required>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="edad">Edad</label>
+                        <input type="text" for="edad" name="edad" placeholder="ingresar su edad" maxlength="3">
+                    </li>
+                    <li>
+                        <label for="esp">Especialidad</label>
+                        <select name="esp" id="" required>
+                            <option value="cardio">Cardiologia</option>
+                            <option value="uro">Urología</option>
+                            <option value="otorro">Otorrinolaringología</option>
+                            <option value="nefro">Nefrología</option>
+                            <option value="pedi">Pediatría</option>
+                            <option value="neuro">Neurología</option>
+                        </select>
+                    </li>
+                    <li>
+                        <Label for="lada">Ingresar la LADA de su número de teléfono</Label>
+                        <input type="text" for="lada" name="lada" maxlength="3" placeholder="Ejemplo: 656" required>
+                    </li>
+                    <li>
+                        <Label for="tel">Ingresar su número de teléfono SIN LADA</Label>
+                        <input type="text" for="lada" name="lada" maxlength="8" placeholder="ejemplo: 123-4567" required>
+                    </li>
+                    <li>
+                        <button class="submit" type="submit">Enviar</button>
+                    </li>
+                </ul>
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
